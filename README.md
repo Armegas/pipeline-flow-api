@@ -48,8 +48,11 @@ uvicorn main:app --reload
 API disponible en: http://localhost:8000/docs
 
 🧪 Tests
+<pre>
 bash
 pytest
+</pre>
+
 📖 Roadmap
 [x] Plantilla reproducible de MLOps
 
