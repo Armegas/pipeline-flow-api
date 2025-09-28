@@ -11,7 +11,7 @@ source prefect-api-env/bin/activate
 # Devuelve las respuestas al cliente.
 # Y, con --reload, reinicia automáticamente al detectar cambios en el código.
 
-****  python -m uvicorn api.model_api:app --reload  ****
+****  uvicorn main:app --reload ****
 
 ABRIR AHORA:
 
