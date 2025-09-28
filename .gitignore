@@ -1,0 +1,20 @@
+# Entornos virtuales
+airflow-env/
+prefect-api-env/
+
+# Airflow local
+airflow_home/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Modelos entrenados y datos
+models/
+*.pkl
+*.h5
+*.csv
+*.parquet
+
+# Notebooks checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,70 @@
+FASTAPI // UVICOR
+
+1 - ACTIVAR EL ENTORNO VIRTUAL
+source prefect-api-env/bin/activate
+
+2 - Python busca el paquete uvicorn en tu entorno virtual y lanza su entrypoint. / lanzando un servidor web ASGI con Uvicorn
+# Importa tu aplicación FastAPI (app).
+# La expone en http://127.0.0.1:8000.
+# Escucha peticiones HTTP entrantes.
+# Las convierte en eventos ASGI que tu aplicación procesa.
+# Devuelve las respuestas al cliente.
+# Y, con --reload, reinicia automáticamente al detectar cambios en el código.
+
+****  python -m uvicorn api.model_api:app --reload  ****
+
+ABRIR AHORA:
+
+http://127.0.0.1:8000/        
+http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/redoc
+
+Entender el endpoint
+Ruta: POST /predict
+Entrada: un JSON con 4 valores numéricos (longitud y ancho de sépalos y pétalos).
+Salida: un JSON con la clase numérica y el nombre de la especie predicha.
+
+{
+  "sepal_length": 5.1,
+  "sepal_width": 3.5,
+  "petal_length": 1.4,
+  "petal_width": 0.2
+}
+
+
+# HTTP POST 
+# En FastAPI lo defini con @app.post("/predict"), por eso corresponde a un endpoint POST.
+****  curl -X POST http://127.0.0.1:8000/predict   -H "Content-Type: application/json"   -d '{"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2}' ****
+
+DESGLOCE DE CURL:
+curl -X POST http://127.0.0.1:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2}'
+
+
+# TEST REQUEST.PY
+ejecutar en el BASH
+****  python test_request.py  ****
+contenido del archivo:
+
+import requests
+
+url = "http://127.0.0.1:8000/predict"
+payload = {
+    "sepal_length": 5.1,
+    "sepal_width": 3.5,
+    "petal_length": 1.4,
+    "petal_width": 0.2
+}
+
+response = requests.post(url, json=payload)
+print("Status:", response.status_code)
+print("Respuesta:", response.json())
+
+debe devolver:
+Respuesta: {'predicted_class': 0, 'predicted_species': 'setosa'}
+
+
+# salir del entorno:
+****  deactivate ****
+

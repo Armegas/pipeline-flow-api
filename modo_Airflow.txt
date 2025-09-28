@@ -1,0 +1,21 @@
+Activar Entrno Virtual
+>>  source ~/pipeline-flow-api/airflow-env/bin/activate
+
+Establecer el directorio de Airflow
+>> export AIRFLOW_HOME=$(pwd)/airflow
+
+Para verificar que la variable se ha establecido correctamente:
+>> echo $AIRFLOW_HOME
+
+Desactivar Entorno Virtual
+>> deactivate
+
+llamar a ejecucion airflow para Workflow
+>> airflow standalone
+
+
+>> localhost:8080
+
+
+Credenciales si las pide
+>> {"admin": "Cz5kQXnuyMUAx3HP"}
