@@ -36,9 +36,9 @@ pip install -r requirements.txt
 Levantar Airflow
 <pre>
 bash
+airflow standalone
 </pre>
-  airflow standalone
-DAGs disponibles en dags/.
+DAGs disponibles en </pre> dags/. </pre>
 
 Levantar FastAPI
 <pre>
