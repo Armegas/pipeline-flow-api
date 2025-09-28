@@ -34,14 +34,22 @@ pip install -r requirements.txt
 Levantar Airflow
 </pre>
 
+<pre>
+
+▶️ Uso
+Levantar Airflow
+
 bash
 airflow standalone
 DAGs disponibles en dags/.
 
+</pre>
+  
 Levantar FastAPI
-
+<pre>
 bash
 uvicorn main:app --reload
+</pre>
 API disponible en: http://localhost:8000/docs
 
 🧪 Tests
