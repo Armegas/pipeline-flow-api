@@ -54,13 +54,16 @@ pytest
 </pre>
 
 📖 Roadmap
+<pre>
 [x] Plantilla reproducible de MLOps
 
 [ ] Integración con Prefect como alternativa a Airflow
 
 [ ] Dashboard de métricas en tiempo real
+</pre>
 
 🤝 Contribución
+<pre>
 Haz un fork del repo
 
 Crea una rama (git checkout -b feature/nueva-funcionalidad)
@@ -70,6 +73,10 @@ Haz commit de tus cambios
 Haz push a la rama
 
 Abre un Pull Request
+</pre>
 
+
+<pre>
 📜 Licencia
 MIT License.
+</pre>
