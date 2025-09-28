@@ -19,6 +19,9 @@ pipeline-flow-api/
 ├── requirements.txt  # Dependencias
 └── README.md
 </pre>
+
+<pre>
+
 ⚙️ Instalación y entorno
 bash
 # Crear entorno virtual
@@ -29,6 +32,7 @@ source airflow-env/bin/activate
 pip install -r requirements.txt
 ▶️ Uso
 Levantar Airflow
+</pre>
 
 bash
 airflow standalone
