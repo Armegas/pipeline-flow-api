@@ -30,21 +30,16 @@ source airflow-env/bin/activate
 
 # Instalar dependencias
 pip install -r requirements.txt
-▶️ Uso
-Levantar Airflow
 </pre>
 
-<pre>
-
 ▶️ Uso
 Levantar Airflow
-
+<pre>
 bash
-airflow standalone
+</pre>
+  airflow standalone
 DAGs disponibles en dags/.
 
-</pre>
-  
 Levantar FastAPI
 <pre>
 bash
