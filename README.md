@@ -4,8 +4,8 @@
 🚀 Descripción
 pipeline-flow-api es un proyecto educativo y modular que integra Airflow para orquestación, FastAPI para servir modelos y endpoints, y prácticas de MLOps reproducibles. Su objetivo es mostrar el camino del notebook a producción, con un enfoque didáctico y auditable.
 
-📂 Ejemplo para tu estructura de proyecto
-En tu README.md ponlo así:
+📂 Ejemplo para la estructura de proyecto
+En tu README.md en esta caso lo coloco  así:
 
 <pre>
 
